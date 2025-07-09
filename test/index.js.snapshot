@@ -1,0 +1,151 @@
+exports[`[cjs] babel-plugin-transform-css-modules > default 1`] = `
+/* eslint-disable react/prop-types */
+import * as React from "react";
+import { clsx } from "clsx";
+var headerLevelClassName = {
+  1: "libComponent__header--level-1",
+  2: "libComponent__header--level-2"
+};
+export var Component = _ref => {
+  var {
+    headerLevel = 1,
+    mode = "plain",
+    appearance = "light",
+    gradientColor = "blue",
+    platform,
+    disabled,
+    children
+  } = _ref;
+  var headerClassName = clsx("libComponent__header", headerLevelClassName[headerLevel]);
+  return /*#__PURE__*/React.createElement("div", {
+    className: clsx("libComponent", disabled && "libComponent--disabled", platform === "ios" && "libComponent--ios", styles["Component--mode-".concat(mode)], styles["Component--gradient-".concat(appearance, "-").concat(gradientColor)])
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: headerClassName
+  }, children));
+};
+var styles = {
+  "Component--mode-vertical": "libComponent--mode-vertical",
+  "Component--mode-horizontal": "libComponent--mode-horizontal",
+  "Component--gradient-light-blue": "libComponent--gradient-light-blue",
+  "Component--gradient-light-gold": "libComponent--gradient-light-gold",
+  "Component--gradient-light-green": "libComponent--gradient-light-green",
+  "Component--gradient-dark-blue": "libComponent--gradient-dark-blue",
+  "Component--gradient-dark-gold": "libComponent--gradient-dark-gold",
+  "Component--gradient-dark-green": "libComponent--gradient-dark-green"
+};
+`;
+
+exports[`[cjs] babel-plugin-transform-css-modules > with \`keep\` option 1`] = `
+/* eslint-disable react/prop-types */
+import * as React from "react";
+import { clsx } from "clsx";
+import "./Component.module.css";
+import "./ComponentIOS.module.css";
+var headerLevelClassName = {
+  1: "libComponent__header--level-1",
+  2: "libComponent__header--level-2"
+};
+export var Component = _ref => {
+  var {
+    headerLevel = 1,
+    mode = "plain",
+    appearance = "light",
+    gradientColor = "blue",
+    platform,
+    disabled,
+    children
+  } = _ref;
+  var headerClassName = clsx("libComponent__header", headerLevelClassName[headerLevel]);
+  return /*#__PURE__*/React.createElement("div", {
+    className: clsx("libComponent", disabled && "libComponent--disabled", platform === "ios" && "libComponent--ios", styles["Component--mode-".concat(mode)], styles["Component--gradient-".concat(appearance, "-").concat(gradientColor)])
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: headerClassName
+  }, children));
+};
+var styles = {
+  "Component--mode-vertical": "libComponent--mode-vertical",
+  "Component--mode-horizontal": "libComponent--mode-horizontal",
+  "Component--gradient-light-blue": "libComponent--gradient-light-blue",
+  "Component--gradient-light-gold": "libComponent--gradient-light-gold",
+  "Component--gradient-light-green": "libComponent--gradient-light-green",
+  "Component--gradient-dark-blue": "libComponent--gradient-dark-blue",
+  "Component--gradient-dark-gold": "libComponent--gradient-dark-gold",
+  "Component--gradient-dark-green": "libComponent--gradient-dark-green"
+};
+`;
+
+exports[`[esm] babel-plugin-transform-css-modules > default 1`] = `
+/* eslint-disable react/prop-types */
+import * as React from "react";
+import { clsx } from "clsx";
+var headerLevelClassName = {
+  1: "libComponent__header--level-1",
+  2: "libComponent__header--level-2"
+};
+export var Component = _ref => {
+  var {
+    headerLevel = 1,
+    mode = "plain",
+    appearance = "light",
+    gradientColor = "blue",
+    platform,
+    disabled,
+    children
+  } = _ref;
+  var headerClassName = clsx("libComponent__header", headerLevelClassName[headerLevel]);
+  return /*#__PURE__*/React.createElement("div", {
+    className: clsx("libComponent", disabled && "libComponent--disabled", platform === "ios" && "libComponent--ios", styles["Component--mode-".concat(mode)], styles["Component--gradient-".concat(appearance, "-").concat(gradientColor)])
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: headerClassName
+  }, children));
+};
+var styles = {
+  "Component--mode-vertical": "libComponent--mode-vertical",
+  "Component--mode-horizontal": "libComponent--mode-horizontal",
+  "Component--gradient-light-blue": "libComponent--gradient-light-blue",
+  "Component--gradient-light-gold": "libComponent--gradient-light-gold",
+  "Component--gradient-light-green": "libComponent--gradient-light-green",
+  "Component--gradient-dark-blue": "libComponent--gradient-dark-blue",
+  "Component--gradient-dark-gold": "libComponent--gradient-dark-gold",
+  "Component--gradient-dark-green": "libComponent--gradient-dark-green"
+};
+`;
+
+exports[`[esm] babel-plugin-transform-css-modules > with \`keep\` option 1`] = `
+/* eslint-disable react/prop-types */
+import * as React from "react";
+import { clsx } from "clsx";
+import "./Component.module.css";
+import "./ComponentIOS.module.css";
+var headerLevelClassName = {
+  1: "libComponent__header--level-1",
+  2: "libComponent__header--level-2"
+};
+export var Component = _ref => {
+  var {
+    headerLevel = 1,
+    mode = "plain",
+    appearance = "light",
+    gradientColor = "blue",
+    platform,
+    disabled,
+    children
+  } = _ref;
+  var headerClassName = clsx("libComponent__header", headerLevelClassName[headerLevel]);
+  return /*#__PURE__*/React.createElement("div", {
+    className: clsx("libComponent", disabled && "libComponent--disabled", platform === "ios" && "libComponent--ios", styles["Component--mode-".concat(mode)], styles["Component--gradient-".concat(appearance, "-").concat(gradientColor)])
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: headerClassName
+  }, children));
+};
+var styles = {
+  "Component--mode-vertical": "libComponent--mode-vertical",
+  "Component--mode-horizontal": "libComponent--mode-horizontal",
+  "Component--gradient-light-blue": "libComponent--gradient-light-blue",
+  "Component--gradient-light-gold": "libComponent--gradient-light-gold",
+  "Component--gradient-light-green": "libComponent--gradient-light-green",
+  "Component--gradient-dark-blue": "libComponent--gradient-dark-blue",
+  "Component--gradient-dark-gold": "libComponent--gradient-dark-gold",
+  "Component--gradient-dark-green": "libComponent--gradient-dark-green"
+};
+`;
