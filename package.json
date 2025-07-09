@@ -1,0 +1,70 @@
+{
+  "name": "babel-plugin-transform-modules-css",
+  "version": "1.0.0",
+  "description": "Transform CSS modules as plain text without an object, if possible.",
+  "keywords": [
+    "babel-plugin",
+    "css-modules"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/inomdzhon/babel-plugin-transform-modules-css",
+  "bugs": "https://github.com/inomdzhon/babel-plugin-transform-modules-css/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inomdzhon/babel-plugin-transform-modules-css.git"
+  },
+  "author": {
+    "email": "inomjon92@gmai.com",
+    "name": "Inomdzhon Mirdzhamolov"
+  },
+  "engines": {
+    "node": ">= 14.0.0"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./cjs/index.сjs",
+      "default": "./cjs/index.сjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "/cjs",
+    "/src",
+    "/LICENSE",
+    "/package.json",
+    "/README.md"
+  ],
+  "peerDependencies": {
+    "postcss": ">=8.4.5",
+    "postcss-modules": ">=5.0.0"
+  },
+  "scripts": {
+    "prepare": "husky || true",
+    "build:cjs": "babel src --out-dir cjs --out-file-extension .cjs",
+    "lint": "eslint ./src",
+    "test": "node --test 'test/index.js'",
+    "test:update-snapshots": "node --test-update-snapshots --test 'test/index.js'"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@eslint/js": "^9.30.1",
+    "@eslint/json": "^0.12.0",
+    "@eslint/markdown": "^6.6.0",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "babel-plugin-transform-import-meta": "^2.3.3",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
+    "postcss": "^8.5.6",
+    "postcss-modules": "^6.0.1"
+  },
+  "publishConfig": {
+    "provenance": true
+  }
+}
