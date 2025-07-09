@@ -1,4 +1,4 @@
-# babel-plugin-transform-modules-css
+# babel-plugin-transform-modules-css-2
 
 The plugin detects CSS Modules imports of the form `import <styleImportName> from "./<componentName>.module.css"` and replaces usages of `<styleImportName>.*` with string literals if possible. Otherwise, it creates a mapping object.
 
