@@ -14,7 +14,7 @@ jobs:
     name: Lint
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Node setup
         uses: ./.github/actions/node-setup
@@ -27,7 +27,7 @@ jobs:
     name: Test
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Node setup
         uses: ./.github/actions/node-setup
